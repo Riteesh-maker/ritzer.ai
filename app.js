@@ -108,7 +108,7 @@ async function sendMessage() {
     removeTyping();
 
 
-   const response = await fetch("small-credit-692f.ballakaririteesh.workers.dev", {
+   const response = await fetch("https://small-credit-692f.ballakaririteesh.workers.dev", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
