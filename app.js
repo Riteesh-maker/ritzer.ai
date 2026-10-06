@@ -108,8 +108,20 @@ async function sendMessage() {
     removeTyping();
 
 
-    const answer =
-        generateResponse(text);
+   const response = await fetch("small-credit-692f.ballakaririteesh.workers.dev", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        message: text
+    })
+});
+
+const data = await response.json();
+
+const answer =
+    data.response || "Sorry, I couldn't get a response.";
 
 
     addMessage(
