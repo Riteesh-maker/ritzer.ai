@@ -92,15 +92,7 @@ async function sendMessage() {
     showTyping();
 
 
-    /*
-        DEMO MODE
-
-        This gives the website
-        immediate functionality.
-
-        Later we can replace this
-        with your real AI backend.
-    */
+  
 
     await wait(900);
 
