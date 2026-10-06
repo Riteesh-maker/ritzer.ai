@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RITZER AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="brand">
+                <div class="logo">R</div>
+                <span>RITZER AI</span>
+            </div>
+
+            <button class="new-chat" id="newChat">
+                <span>＋</span>
+                New chat
+            </button>
+
+            <div class="section-title">
+                Recent chats
+            </div>
+
+            <div class="chat-history" id="chatHistory">
+                <!-- History appears here -->
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <button class="side-button" id="themeButton">
+                    <span>◐</span>
+                    Theme
+                </button>
+
+                <button class="side-button danger" id="clearButton">
+                    <span>⌫</span>
+                    Clear history
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+
+        <main class="main">
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <button class="menu-button" id="menuButton">
+                    ☰
+                </button>
+
+                <div class="model-name">
+                    <div class="mini-logo">R</div>
+
+                    <div>
+                        <strong>RITZER AI</strong>
+                        <small>AI Assistant</small>
+                    </div>
+                </div>
+
+                <div class="online">
+                    <span></span>
+                    Online
+                </div>
+
+            </header>
+
+
+            <!-- CHAT -->
+
+            <section class="chat" id="chat">
+
+                <div class="welcome" id="welcome">
+
+                    <div class="welcome-logo">
+                        R
+                    </div>
+
+                    <h1>
+                        Welcome to
+                        <span>RITZER AI</span>
+                    </h1>
+
+                    <p>
+                        Your intelligent AI assistant for learning,
+                        creating and building.
+                    </p>
+
+
+                    <div class="suggestions">
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Explain artificial intelligence in a simple way">
+
+                            <b>🧠</b>
+
+                            <div>
+                                <strong>Learn about AI</strong>
+                                <small>Explain artificial intelligence simply</small>
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Give me a creative website idea">
+
+                            <b>🌐</b>
+
+                            <div>
+                                <strong>Create a website</strong>
+                                <small>Give me a creative website idea</small>
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Teach me JavaScript from beginner level">
+
+                            <b>💻</b>
+
+                            <div>
+                                <strong>Learn coding</strong>
+                                <small>Teach me JavaScript</small>
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Give me a unique startup idea for a student">
+
+                            <b>🚀</b>
+
+                            <div>
+                                <strong>Build an idea</strong>
+                                <small>Give me a startup idea</small>
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INPUT -->
+
+            <footer class="input-area">
+
+                <div class="input-container">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Message RITZER AI..."
+                        rows="1">
+                    </textarea>
+
+                    <button
+                        class="send-button"
+                        id="sendButton"
+                        aria-label="Send">
+
+                        ↑
+
+                    </button>
+
+                </div>
+
+                <div class="footer-text">
+                    RITZER AI can make mistakes. Check important information.
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+
