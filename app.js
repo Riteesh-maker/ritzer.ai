@@ -105,30 +105,31 @@ async function sendMessage() {
     await wait(900);
 
 
-    removeTyping();
+   removeTyping();
 
-
-   const response = await fetch("https://small-credit-692f.ballakaririteesh.workers.dev", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        message: text
-    })
-});
-
-const data = await response.json();
-
-const answer =
-    data.response || "Sorry, I couldn't get a response.";
-
-
-    addMessage(
-        answer,
-        "ai"
+try {
+    const response = await fetch(
+        "https://small-credit-692f.ballakaririteesh.workers.dev",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: text
+            })
+        }
     );
 
+    const data = await response.json();
+
+    const answer = data.response || data.error || "No response received.";
+
+    addMessage(answer, "ai");
+
+} catch (error) {
+    addMessage("Connection error: " + error.message, "ai");
+}
 }
 
 
